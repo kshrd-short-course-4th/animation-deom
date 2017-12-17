@@ -23,8 +23,35 @@ public class MainActivity extends AppCompatActivity {
         anim= AnimationUtils.loadAnimation(this,R.anim.fade_in_anim);
         imageView.startAnimation(anim);
     }
-
     public void onFadeOut(View view) {
+        anim=AnimationUtils.loadAnimation(this,
+                R.anim.fade_out_anim);
+        imageView.startAnimation(anim);
+    }
 
+    public void onZoomIn(View view) {
+        anim=AnimationUtils.loadAnimation(this,
+                R.anim.zoom_in_anim);
+        imageView.startAnimation(anim);
+    }
+
+    public void onZoomOut(View view) {
+
+    }
+
+    public void onToBottom(View view) {
+        anim=AnimationUtils.loadAnimation(this,
+                R.anim.move_to_button_anim);
+        imageView.startAnimation(anim);
+    }
+
+    public void onMoveToTop(View view) {
+
+    }
+
+    public void onRotate(View view) {
+        anim=AnimationUtils.loadAnimation(this,
+                R.anim.rotate_anim);
+        imageView.startAnimation(anim);
     }
 }
